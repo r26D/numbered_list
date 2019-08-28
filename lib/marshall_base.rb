@@ -1,5 +1,5 @@
 
-  class NumberedList::MarshallBase < ActiveRecord::Type::Value
+  class MarshallBase < ActiveRecord::Type::Value
 
     def value_class
       Item

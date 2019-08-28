@@ -1,5 +1,5 @@
 
-  class NumberedList::ItemValue < Value.new(:name, :formatted, :order_value, :description)
+  class ItemValue < Value.new(:name, :formatted, :order_value, :description)
     def builder_method_name
       method_name.to_sym
     end
