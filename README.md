@@ -4,7 +4,7 @@ This library was built to make it easy to manage value objects/enums.
 
 
 Example Usage: 
-```
+```ruby
 class NumberedList::Colors < NumberedList
   item({name: "RED",
         formatted: "Red",
@@ -21,7 +21,7 @@ end
 
 ## Examples of usage
 
-```
+```ruby
 NumberedList::Colors.red.name == "RED"
 NumberedList::Colors.red.red? == true
 NumberedList::Colors.blue.red? == false
