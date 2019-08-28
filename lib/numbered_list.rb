@@ -1,4 +1,5 @@
-require 'numbered_list/item_value'
+require 'item_value'
+require 'marshall_base'
 
 class NumberedList
   attr_reader :item
@@ -58,7 +59,7 @@ class NumberedList
 
   def self.item(item_values)
 
-    item = NumberedList::ItemValue.with(item_values)
+    item = ItemValue.with(item_values)
 
     add_item(item)
     add_item_builder(item)
@@ -69,7 +70,7 @@ class NumberedList
   end
 
   def self.add_marshall_class
-    klass = self.const_set("Marshall", Class.new(NumberedList::MarshallBase))
+    klass = self.const_set("Marshall", Class.new(MarshallBase))
     original_class = self
     klass.class_eval do
       define_method(:value_class) do
