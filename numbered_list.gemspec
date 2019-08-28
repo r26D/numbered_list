@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version     = '0.0.1'
   s.date        = '2019-08-28'
   s.description = "This is a simpler wrapper object to make it easy to build usefule Enum/Value Objects"
-  s.description = "Enum/Value Object Builder"
+  s.summary = "Enum/Value Object Builder"
   s.authors     = ["Dirk Elmendorf"]
   s.email       = 'dirk@r26d.com'
   s.files       = ["lib/numbered_list.rb", "lib/numbered_list/item_value.rb", "lib/numbered_list/marshall_base.rb"]
