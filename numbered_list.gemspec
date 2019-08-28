@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'numbered_list'
-  s.version = '0.0.4'
+  s.version = '0.0.5'
   s.date = '2019-08-28'
   s.description = "This is a simpler wrapper object to make it easy to build usefule Enum/Value Objects"
   s.summary = "Enum/Value Object Builder"
