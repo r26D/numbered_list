@@ -5,7 +5,7 @@ This library was built to make it easy to manage value objects/enums.
 
 Example Usage: 
 ```ruby
-class NumberedList::Colors < NumberedList
+class NumberedList::Colors < NumberedList::List
   item({name: "RED",
         formatted: "Red",
         order_value: 1,
@@ -28,5 +28,4 @@ NumberedList::Colors.blue.red? == false
 NumberedList::Colors.types == ["RED", "BLUE"]
 NumberedList::Colors.find_item("RED") == NumberedList::Colors.red
 NumberedList::Colors.as_objs == [NumberedList::Colors.red, NumberedList::Colors.blue]
-NumberedList::Colors.red == NumberedList::Colors.red
 ```

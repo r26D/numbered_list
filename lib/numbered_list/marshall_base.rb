@@ -1,4 +1,5 @@
 
+module NumberedList
   class MarshallBase < ActiveRecord::Type::Value
 
     def value_class
@@ -21,3 +22,4 @@
     end
   end
 
+end
